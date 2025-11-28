@@ -18,6 +18,11 @@ public:
     std::string getAllRecords();
     std::string deleteRecord(const std::string& key);
 
+    // Métodos para estadísticas y visualización de Linear Hashing
+    std::string getStatistics();
+    std::string getBucketsInfo();
+    std::string getHashTableState();
+
     // Método auxiliar para generar JSON
     static std::string toJson(const std::string& key, const std::string& value);
     static std::string errorJson(const std::string& message);
